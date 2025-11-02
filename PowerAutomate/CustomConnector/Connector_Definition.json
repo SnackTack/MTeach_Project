@@ -1,0 +1,28 @@
+Security
+Authentication type: OAuth 2.0
+
+Identity Provider: Google
+
+Client ID: (Your Client ID from Google Cloud Console)
+
+Client secret: (Your Client secret from Google Cloud Console)
+
+Scope: https://www.googleapis.com/auth/cloud-platform
+
+Definition (Request)
+Verb: POST
+
+URL:
+
+https://us-central1-aiplatform.googleapis.com/v1/projects/1022573541099/locations/us-central1/endpoints/4786243384941477888:predict
+Body:
+
+JSON
+
+{
+  "instances": [
+    {
+      "model_prompt": "Sample incident text"
+    }
+  ]
+}
